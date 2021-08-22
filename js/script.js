@@ -5,7 +5,7 @@ function load() {
         arrow.addEventListener("dblclick", recolher);
 
     var btnMore = document.querySelectorAll("button");
-        btnMore[3].setAttribute("style", "width: 50px; height: 50px; border-radius: 50%; background: crimson;");
+        btnMore[3].setAttribute("style", "width: 50px; height: 50px; border-radius: 50%; color: white; background: crimson;");
 }
 
 function expand() {
