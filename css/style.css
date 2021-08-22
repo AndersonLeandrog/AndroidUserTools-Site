@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 1.4em;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    background: limegreen;
+}
+
+    nav div{
+        float: left;
+        width: 180px;
+        height: 35px;
+        margin: 8px 0px 0px 5px;
+        /*background: crimson;*/
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul{
+        float: right;
+        width: 500px;
+        height: 35px;
+        margin: 8px 5px 0px 0px;
+        /*background: violet;*/
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+        ul li{
+            width: 85px;
+            height: 35px;
+            list-style: none;
+            cursor: pointer;
+            text-decoration: none;
+            /*background: wheat;*/
+
+            font-size: 1.2em;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul li:hover{
+            border-bottom: 1px solid white;
+        }
+
+.container{
+    width: 100%;
+    height: 1200px;
+    background: whitesmoke;
+}
+
+    .container .alert{
+        width: 100%;
+        height: 42px;
+        background: crimson;
+
+        font-size: 1.15em;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container #about{
+        width: 100%;
+        height: 650px;
+        background: #141414;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #about .box{
+            width: 90%;
+            height: 180px;
+            margin-top: 50px;
+            /*background: crimson;*/
+        }
+
+            #about .box .text{
+                font-size: 1.2em;
+                text-align: center;
+            }
+
+        #about .icons{
+            width: 40%;
+            height: 50px;
+            margin: 65px 0px 65px 0px;
+            /*background: darkgoldenrod;*/
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+            #about .icons img{
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+                filter: grayscale(1);
+                /*background: darkmagenta;*/
+            }
+
+        @keyframes rotateSet {
+            from{transform: rotate(0deg);}
+            to{transform: rotate(-180deg);}
+        }
+
+        @keyframes rotatenSet {
+            from{transform: rotate(-180deg);}
+            to{transform: rotate(0deg);}
+        }
+        
+
+    .container .expand-Box {
+        width: 100%;
+        height: 600px;
+        background: #141414;
+
+        display: none; /*???*/
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .expand-Box .box {
+            width: 50%;
+            height: 140px;
+            margin-bottom: 30px;
+            /*background: rgb(97, 43, 26);*/
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+            .title {
+                font-size: 1.4em;
+            }
+
+            .text {
+                font-size: 1.2em;
+                text-align: justify;
+                padding-top: 15px;
+            }
+
+    .container #version{
+        width: 100%;
+        height: 265px;
+        border-top: 1px dashed #3d3d3d;
+        background: lightgray;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #version .title{
+            font-size: 1.4em;
+            text-align: center;
+            color: #3d3d3d;
+        }
+
+        #version .text{
+            font-size: 1.2em;
+            text-align: center;
+            color: #3d3d3d;
+        }
+
+        #version .download-Box{
+            width: 56%;
+            height: 50px;
+            margin-top: 45px;
+            /*background: darkcyan;*/
+
+            display: flex;
+            justify-content: space-around;
+        }
+
+            .download-Box button{
+                width: 120px;
+                height: 50px;
+                border: none;
+                cursor: pointer;
+                background: silver;
+            }
+
+            .download-Box button:hover{
+                background: limegreen;
+            }
+
+    .container #tutorial {
+        width: 100%;
+        height: 430px;
+        border-top: 1px dashed #3d3d3d;
+        background: gainsboro;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #tutorial .box{
+            width: 80%;
+            height: 340px;
+            /*background: blue;*/
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+            #tutorial .box .title{
+                font-size: 1.4em;
+                text-align: center;
+                color: #3d3d3d;
+            }
+
+            #tutorial .box .text{
+                font-size: 1.2em;
+                color: #3d3d3d;
+            }
+
+    .container footer {
+        width: 100%;
+        height: 260px;
+        border-top: 1px dashed #3d3d3d;
+        background: #1c1c1c;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+        footer .info-Box {
+            width: 300px;
+            height: 185px;
+            margin-top: 15px;
+            /*background: #3d3d3d;*/
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            .info-Box .social-Box {
+                width: 165px;
+                height: 30px;
+                /*background: #993e3e;*/
+
+                display: flex;
+                justify-content: space-around;
+            }
+
+                .social-Box img {
+                    width: 30px;
+                    height: 30px;
+                }
+
+            .info-Box .textBox {
+                width: 165px;
+                height: 140px;
+                margin-top: 8px;
+                border-radius: 5px;
+                /*background: #3d3d3d;*/
+            }
+
+                .info-Box .textBox p{
+                    font-size: 0.82em;
+                    padding-top: 15px;
+                    text-align: justify;
+                }
