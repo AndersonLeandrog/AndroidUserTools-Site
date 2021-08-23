@@ -26,7 +26,7 @@ nav{
         width: 180px;
         height: 35px;
         margin: 8px 0px 0px 5px;
-        /*background: crimson;*/
+        background: crimson;
 
         display: flex;
         justify-content: center;
@@ -94,7 +94,7 @@ nav{
     }
 
         #about .box{
-            width: 90%;
+            width: 65%;
             height: 180px;
             margin-top: 50px;
             /*background: crimson;*/
@@ -193,13 +193,13 @@ nav{
         }
 
         #version .download-Box{
-            width: 56%;
+            width: 50%;
             height: 50px;
             margin-top: 45px;
             /*background: darkcyan;*/
 
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
         }
 
             .download-Box button{
