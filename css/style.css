@@ -26,7 +26,7 @@ nav{
         width: 180px;
         height: 35px;
         margin: 8px 0px 0px 5px;
-        background: crimson;
+        /*background: crimson;*/
 
         display: flex;
         justify-content: center;
@@ -93,6 +93,11 @@ nav{
         align-items: center;
     }
 
+        #about > img:first-child{
+            width: 68px;
+            height: 45px;
+        }
+
         #about .box{
             width: 65%;
             height: 180px;
@@ -112,7 +117,7 @@ nav{
             /*background: darkgoldenrod;*/
 
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
         }
 
@@ -142,14 +147,13 @@ nav{
 
         display: none; /*???*/
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
     }
 
         .expand-Box .box {
             width: 50%;
             height: 140px;
-            margin-bottom: 30px;
             /*background: rgb(97, 43, 26);*/
 
             display: flex;
@@ -223,12 +227,12 @@ nav{
 
         display: flex;
         justify-content: center;
-        align-items: center;
     }
 
         #tutorial .box{
             width: 80%;
             height: 340px;
+            margin-top: 30px;
             /*background: blue;*/
 
             display: flex;
@@ -264,7 +268,7 @@ nav{
             width: 300px;
             height: 185px;
             margin-top: 15px;
-            /*background: #3d3d3d;*/
+            /*background: red;*/
 
             display: flex;
             flex-direction: column;
@@ -274,6 +278,7 @@ nav{
             .info-Box .text{
                 font-size: 1em;
                 color: silver;
+                text-align: center;
             }
 
             .info-Box .social-Box {

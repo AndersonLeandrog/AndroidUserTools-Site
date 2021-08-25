@@ -1,0 +1,71 @@
+
+/*de 560px pra cima*/
+@media (min-width: 560px) {
+
+    nav{
+        display: inherit;
+        justify-content: inherit;
+    }
+
+        nav ul{
+            width: 340px;
+            display: flex;
+        }
+
+            nav ul li{
+                width: 62px;
+            }
+    
+    .container .alert{
+        display: flex;
+    }
+
+    .container #about .box{
+        width: 80%;
+        height: 180px;
+    }
+
+    .container #about .icons{
+        width: 42%;
+    }
+
+    .container .expand-Box {
+        height: 598px;
+    }
+        
+        .expand-Box .box {
+            width: 68%;
+            height: 130px;
+        }
+
+    .container #version{
+        height: 320px;
+    }
+
+        #version .download-Box{
+            width: 436px;
+            height: 50px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+    /*parei aqui*/
+    .container #tutorial {
+        height: 490px;
+    }
+
+        #tutorial .box{
+            width: 95%;
+            height: 380px;
+        }
+
+            #tutorial .box .title{
+                font-size: 1.2em;
+            }
+
+            #tutorial .box .text{
+                font-size: 1em;
+            }
+}
