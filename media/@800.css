@@ -1,7 +1,7 @@
 
 /*de 800px pra cima*/
 @media (min-width: 800px) {
-
+    
     .container #about .box{
         width: 60%;
     }
