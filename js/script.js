@@ -1,4 +1,3 @@
-
 function load() {
     var arrow = document.querySelector(".arrow");
         arrow.addEventListener("click", expandirPagina);

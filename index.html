@@ -23,23 +23,23 @@
 
 <body>
     <div class="container">
-        <nav id="home">
+        <nav id="home" class="menu">
             <div>
                 <h1>AndroidUserTools</h1>
             </div>
 
             <ul>
-                <a href="#home"><li>inicio</li></a>
-                <a href="#about"><li>sobre</li></a>
-                <a href="#version"><li>versão</li></a>
-                <a href="#tutorial"><li>tutorial</li></a>
-                <a href="#doc"><li>doc</li></a>
+                <li><a href="#home">inicio</a></li>
+                <li><a href="#about">sobre</a></li>
+                <li><a href="#version">versão</a></li>
+                <li><a href="#tutorial">tutorial</a></li>
+                <li><a href="doc">doc</a></li>
             </ul>
         </nav> 
 
         <div class="alert">Nova versão UI/UX à caminho! Junho/2022 Ver-1.5.0</div>
 
-        <section id="about">
+        <section id="about" class="test">
             <img src="img/droid.png" alt="Logo" width="80px" height="52px">
             
             <div class="box">
@@ -54,7 +54,7 @@
                 <img src="img/more.png" alt="mais" title="mais">
             </div>
             
-            <img class="arrow" src="img/arrow.png" alt="expandir_conteudo" width="25px" height="25px" style="filter: invert(1); cursor: pointer;">
+            <img class="arrow" src="img/arrow.png" alt="x" width="25px" height="25px" style="filter: invert(1); cursor: pointer;">
         </section>
 
         <div class="expand-Box">
@@ -94,7 +94,7 @@
         <section id="tutorial">
             <div class="box">
                 <p class="title">Tutorial</p>
-                <p class="text">1. Baixe o programa através do nosso site na aba "versões" logo acima,<br>2. Extraia todo o conteúdo do .zip baixado para a sua área de trabalho.<br>3. Abra a pasta extraída e execute o programa 'AndroidUserTools'.<br><br>* Após executar o programa escolha uma opção, [1] para instalar o TWRP,<br>[2] para desbloquear o bootloader, [3] para remover a logo do bootloader e etc...<br><br>NOTA: Caso esteja tendo problemas para baixar ou executar o programa,<br>aqui vai algumas soluções, se estiver com o problema de dll geralmente o programa<br>vai apitar um erro da falta de algumas dll's, esse problema já foi resolvido<br>porém caso volte a aparecer baixe esses arquivos e cole os no diretório<br>raiz do programa AndroidUserTools/aqui</p>
+                <p class="text">1. Baixe o programa através do nosso site na aba "versões" logo acima,<br>2. Extraia todo o conteúdo do .zip baixado para a sua área de trabalho.<br>3. Abra a pasta extraída e execute o programa 'AndroidUserTools'.<br><br>* Após executar o programa escolha uma opção, [1] para instalar o TWRP,<br>[2] para desbloquear o bootloader, [3] para remover a logo do bootloader e etc...<br><br>NOTA: Caso esteja tendo problemas para baixar ou executar o programa,<br>aqui vai algumas soluções, se estiver com o problema de dll geralmente o programa<br>vai apitar um erro da falta de algumas dll's, esse problema já foi resolvido<br>porém caso volte a aparecer baixe as dll's disponibilizadas no git, na pasta ´DLL'S´ e cole os no diretório<br>raiz do programa AndroidUserTools/aqui</p>
             </div>
         </section>
 
@@ -133,3 +133,23 @@
     </div>
 </body>
 </html>
+
+<script>
+    const menuItems = document.querySelectorAll('.menu a[href^="#"]');
+
+    menuItems.forEach(item => {
+        item.addEventListener("click", scrollToIdOnClick);
+    });
+
+    function scrollToIdOnClick(event){
+        event.preventDefault();
+        const element = event.target;
+        const id = element.getAttribute("href");
+        const to = document.querySelector(id).offsetTop;
+
+        window.scroll({
+            top: to - 80,
+            behavior: "smooth"
+        });
+    }
+</script>
