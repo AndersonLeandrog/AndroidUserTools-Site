@@ -13,4 +13,8 @@
         .expand-Box .box {
             width: 56%;
         }
+
+    #tutorial img {
+        height: 420px;
+    }
 }

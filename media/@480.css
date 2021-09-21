@@ -19,10 +19,19 @@
             height: 135px;
         }
 
+    .container #tutorial{
+        height: 920px;
+
+    }
+
     .container #tutorial .box{
         width: 90%;
     }
     
+    #tutorial img{
+        height: 300px;
+    }
+
     .container footer {
         height: 240px;
         flex-direction: row;

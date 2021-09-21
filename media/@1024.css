@@ -61,6 +61,11 @@
             #tutorial .box .text{
                 font-size: 1.2em;
             }
+        
+        #tutorial img{
+            width: 68%;
+            height: 420px;
+        }
 
         footer .info-Box{
             width: 230px;

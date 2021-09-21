@@ -63,6 +63,7 @@
 
         #version .text{
             font-size: 1em;
+            text-align: center;
         }
 
         #version .download-Box{
@@ -74,20 +75,21 @@
         }
 
     .container #tutorial {
-        height: 490px;
+        height: 860px;
     }
 
-        #tutorial .box{
+        #tutorial .box {
             width: 95%;
-            height: 380px;
+            height: 558px;
         }
 
-            #tutorial .box .title{
+            #tutorial .box .title {
                 font-size: 1.2em;
             }
 
-            #tutorial .box .text{
+            #tutorial .box .text {
                 font-size: 1em;
+                text-align: justify;
             }
     
     .container footer {
