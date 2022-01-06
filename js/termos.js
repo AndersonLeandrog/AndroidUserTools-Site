@@ -5,7 +5,9 @@ document.getElementsByTagName('head')[0].appendChild(script)
 
 window.addEventListener('load', () => {
 
-    const div = $('<div></div>')
+    let largura = window.innerWidth
+    if(largura > 1024) {
+        const div = $('<div></div>')
         .html(`
             Atenção, clicando em 'aceitar' você concorda que:
             <br><br>
@@ -30,25 +32,27 @@ window.addEventListener('load', () => {
             Samsung, Xiaomi, LG e Sony. 
         `)
 
-    $(div).css({
-        position: 'fixed',
-        width: '620px',
-        height: '460px',
-        borderRadius: '10px',
-        marginTop: '15%',
-        background: '#fff',
+        $(div).css({
+            position: 'fixed',
+            width: '620px',
+            height: '460px',
+            borderRadius: '10px',
+            marginTop: '15%',
+            background: '#fff',
 
-        fontSize: '16px',
-        padding: '25px',
+            fontSize: '16px',
+            padding: '25px',
 
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-around',
-        alignItems: 'center',
-    })
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-around',
+            alignItems: 'center',
+        })
 
-    $(div).append($('<button class="aceitar">aceitar</button>'))
-    $('body').append(div)
+        $(div).append($('<button class="aceitar">aceitar</button>'))
+        $('body').append(div)
 
-    $('.aceitar').click(() => $(div).remove())
+        $('.aceitar').click(() => $(div).remove())
+    }
+    
 })
