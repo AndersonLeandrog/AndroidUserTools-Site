@@ -5,14 +5,31 @@ document.getElementsByTagName('head')[0].appendChild(script)
 
 window.addEventListener('load', () => {
 
+    //global
+    let click = 0
+
+    //Menu
+    $('#menu').click(() => {
+        click +=1
+        if(click === 1) {
+            $('nav').show()
+            $('#menu img').attr('src', 'img/voltar.png')
+        } else {
+            click = 0
+            $('nav').hide()
+            $('#menu img').attr('src', 'img/menu.png')
+        }
+    })
+
+    $(window).resize(() => {
+        let largura = document.body.clientWidth;
+        largura >= 1024? $('nav').show() : null
+    })
+
     //Scroll do menu
     $('li').click(function (e) {
         const elemento = e.target.className
         switch(elemento) {
-            case 'inicio':
-                scrollTo(0,0)
-                break;
-
             case 'sobre':
                 scrollTo(0,268)
                 break;
@@ -28,12 +45,19 @@ window.addEventListener('load', () => {
             case 'comoUsar':
                 scrollTo(0,2000)
                 break;
+
+            case 'donate':
+                location.href="../donate.html"
+                break;
+
+            default:
+                scrollTo(0,0)
+                break;
         }
     })
 
     
     //Slide do banner
-    let click = 0
     $('.before').click(() => {
         click += 1
         if(click === 1) {
@@ -47,7 +71,7 @@ window.addEventListener('load', () => {
             $('.slide_img').attr('src', 'img/screenshot_1.png')
         }
     })
-
+    
     function atualizarSlide() {
         let iteracao = 1
         const rodar = setInterval(() => {
@@ -64,9 +88,8 @@ window.addEventListener('load', () => {
              atualizarSlide()
         })
     }
-
+    
     atualizarSlide()
-
 
     //Seleção, download das versões
     $('.download').click(() => {
