@@ -11,18 +11,36 @@
     }
 } 
 
+
 @media(min-width: 1024px) {
-    h1 {
-        padding: 30px;
-    }
-    
     header {
-        justify-content: space-between;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 
-    nav {
-        display: flex;
-    }
+        header h1 {
+            display: block;
+        }
+
+        header #menu {
+            display: none;
+        }
+
+        header nav {
+            position: initial;
+            width: 640px;
+            height: 50px;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+        }
+
+          ul {
+            width: 620px;
+            flex-direction: row;
+            justify-content: space-between;
+          }
 
     h2 {
         display: block;
@@ -104,7 +122,18 @@
         footer .contato {
             width: 360px;
         }
+
+    /*donate*/
+    #donate {
+        height: 1200px;
+        justify-content: start;
+    }
+    #box {
+        height: 500px;
+        flex-direction: row;
+    }
 } 
+
 
 @media(min-width: 1280px) {
     .box-info, .box-versao {
