@@ -33,6 +33,7 @@ window.addEventListener('load', () => {
         `)
 
         $(div).css({
+            zIndex: '5',
             position: 'fixed',
             width: '620px',
             height: '460px',

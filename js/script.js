@@ -58,20 +58,40 @@ window.addEventListener('load', () => {
 
     
     //Slide do banner
-    $('.before').click(() => {
-        click += 1
-        if(click === 1) {
-            $('.slide_img').attr('src', 'img/screenshot_2.png')
-        } else if(click === 2){
-            $('.slide_img').attr('src', 'img/screenshot_3.png')
-        } else if(click === 3){
-            $('.slide_img').attr('src', 'img/screenshot_4.png') 
-        } else {
-            click = 0
-            $('.slide_img').attr('src', 'img/screenshot_1.png')
-        }
+    $('.prev').click(() => {
+        let img = document.querySelectorAll('.img')
+        let src0 = img[0].getAttribute('src')
+        let src1 = img[1].getAttribute('src')
+        let src2 = img[2].getAttribute('src')
+
+        $(img[0]).attr('src', `${src2}`)
+        $(img[1]).attr('src', `${src0}`)
+        $(img[2]).attr('src', `${src1}`)
     })
+
+    $('.next').click(() => {
+        let img = document.querySelectorAll('.img')
+        let src0 = img[0].getAttribute('src')
+        let src1 = img[1].getAttribute('src')
+        let src2 = img[2].getAttribute('src')
+        
+        $(img[0]).attr('src', `${src1}`)
+        $(img[1]).attr('src', `${src2}`)
+        $(img[2]).attr('src', `${src0}`)
+    })
+
+    setInterval(() => {
+        let img = document.querySelectorAll('.img')
+        let src0 = img[0].getAttribute('src')
+        let src1 = img[1].getAttribute('src')
+        let src2 = img[2].getAttribute('src')
     
+        $(img[0]).attr('src', `${src1}`)
+        $(img[1]).attr('src', `${src2}`)
+        $(img[2]).attr('src', `${src0}`)
+    }, 10000)
+
+
     function atualizarSlide() {
         let iteracao = 1
         const rodar = setInterval(() => {
