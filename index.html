@@ -1,157 +1,250 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AndroidUserTools | Home</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfólio | github.com/AndersonLeandrog</title>
 
-    <!--CSS-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
-    
-    <!--JS-->
-    <script src="js/script.js"></script>
-    <script src="js/termos.js"></script>
-</head>
+        <!--CSS-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
+        
+        <!--JS-->
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
 
-<body>
-    <header>
-        <h1>AndroidUserTools</h1>
-        <div id="menu">
-            <img src="img/menu.png" style="filter: invert(1);"/>
-        </div>
+    <body>
+        <header>
+            <div id="menu">
+                <img src="img/menu.png"/>
+            </div>
+            
+            <nav class="menu">
+              <ul class="menu-items">
+                <a href="#sobre">
+                    <div class="box">
+                        <img src="img/sobre.png" width="24px" height="24px">
+                        <li>Sobre</li>
+                    </div>
+                </a>
+                
+                <a href="#habilidades">
+                    <div class="box">
+                        <img src="img/habilidades.png" width="24px" height="24px">
+                        <li>Habilidade</li>
+                    </div>
+                </a>
+                
+                <a href="#formacao">
+                    <div class="box">
+                        <img src="img/formacao.png" width="24px" height="24px">
+                        <li>Formação</li>
+                    </div>
+                </a>
+                
+                <a href="#projetos">
+                    <div class="box">   
+                        <img src="img/projetos.png" width="24px" height="24px">
+                        <li>Projetos</li>
+                    </div>
+                </a>
+                
+                <a href="#contato">
+                    <div class="box">
+                        <img src="img/contato.png" width="24px" height="24px">
+                        <li>Contato</li>
+                    </div>
+                </a>
+              </ul>
+            </nav>
+        </header>
 
-        <nav>
-            <ul>
-                <li class="inicio">Inicio</li>
-                <li class="sobre">Sobre</li>
-                <li class="screenshot">Screenshot</li>
-                <li class="versao">Vesão</li>
-                <li class="comoUsar">Como usar?</li>
-                <li class="donate">Donate</li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="sobre">
-        <div class="box-sobre">
-            <p>
-                AndroidUserTools é um programa que auxilia na modificação do seu aparelho android por meio dele é possível 
-                instalar o TWRP, Desbloquear o Bootloader, instalar e desinstalar apps via ADB/Fastboot e muito mais!
-            </p>
-        </div>
-    </section>
-
-    <main>
-        <section id="info">
-            <div class="box-info">
-                <h3>O que é o projeto UI?</h3>
-                <p>
-                    Atualmente o programa roda através do console do windows, o projeto UI ou User Interface, 
-                    vai trazer ao usuário uma interface gráfica mais amigável ao usuário e com mais recursos, 
-                    utilizando a programação orientada a objetos com o Qt, é planejado trazer uma versão do programa 
-                    mais robusta e intuitiva.
-                </p>
+        <section id="sobre">
+            <div class="icone">
+                <img src="img/perfil.jpg" width="150px" height="150px" style="border-radius: 50%;"/>
             </div>
 
-            <div class="box-info">
-                <h3>Versões antigas</h3>
+            <div class="descricao">
+                <h1>
+                    Olá,<br>
+                    Eu sou <b style="font-size: 1em; color: white;">Anderson Leandro,<br>
+                    Desenvolvedor WEB Front-end!</b>
+                </h1>
+
                 <p>
-                    Todas as versões lançadas até o momento ainda serão disponibilizadas, 
-                    embora a recomendação seja sempre que o usuário utilize as versões mais recentes do software!
-                    Somente para correção de futuros bugs, nenhuma outra função de alta escala será adicionada as versões executadas 
-                    por meio do prompt de comando do Windows.
+                    Tenho 25 anos e moro no interior de SP,
+                    sou apaixonado por programação, gosto de tudo que envolve o assunto e estou 
+                    em busca de uma oportunidade no mercado, atualmente estudo desenvolvimento para a WEB,
+                    HTML, CSS e Javascript, também tenho conhecimento em Node, JQuery e ReactJS.
+                    <br><br>
+                    Confira abaixo todas as experiências que eu já obtive nessa area, estou aberto a novas 
+                    oportunidades no mercado de trabalho.
                 </p>
+
+                <a href="http://github.com/andersonleandrog" target="_blank">
+                    <img src="img/git.png" alt="github">
+                </a>
             </div>
-    
-            <div class="box-info">
-                <h3>Previsão de lançamento</h3>
-                <p>
-                    O Projeto já foi estudado e agora está em fase de desenvolvimento e posteriormente em fase de testes, 
-                    isso demanda um certo período de tempo, como este projeto é tocado somente por um desenvolvedor ainda, 
-                    não há garantia de datas, no entanto é certo que estará finalizado ao menos no primeiro semestre de 2022, até Junho.
+        </section>
+
+        <section id="habilidades">
+            <div class="icone">
+                <img src="img/habilidade.png" alt="habilidades" width="65px" height="65px">
+                <p>habilidades</p>
+            </div>
+
+            <div class="box-hab">
+                <ul class="hab-items">
+                    <h1>HTML & CSS</h1>
+                    <li>Domínio de HTML5 e CSS3</li>
+                    <li>Layout responsivo Flex e Grid</li>
+                    <li>Conhecimento em SASS CSS</li>
+                </ul>
+
+                <ul class="hab-items">
+                    <h1>Javascript & Node</h1>
+                    <li>Programação em Javascript e Node</li>
+                    <li>Domínio de funções, classes e objetos</li>
+                    <li>Programação Orientada a Objetos</li>
+                    <li>Desenvolvimento Back-end</li>
+                </ul>
+
+                <ul class="hab-items">
+                    <h1>React & React Native </h1>
+                    <li>Web-apps e Mobile-apps</li>
+                    <li>Criação e reutilização de componentes</li>
+                    <li>Life Cycle</li>
+                </ul>
+
+                <ul class="hab-items">
+                    <h1>Git</h1>
+                    <li>Versionamento</li>
+                    <li>Configuração</li>
+                    <li>Deploy e Atualização</li>
+                </ul>
+            </div>
+        </section>
+
+
+
+        <section id="formacao">
+            <div class="icone">
+                <img src="img/form.png" alt="formação" width="65px" height="65px">
+                <p>Formação</p>
+            </div>
+
+            <div class="descricao">
+                <p style="color: white;">
+                    Udemy Curso WEB Moderno com Javascript (Ago/2021 à Dez/2022)<br>
+                    Cursando desenvolvimento para WEB HTML, CSS, Javascript, Node e jQuery.<br><br>
                 </p>
             </div>
         </section>
 
-        <section id="slide">
-            <div class="slide-box">
-                <p class="prev" style="left: -15px;">❮</p>
-                <div class="box">
-                    <img class="img" src="img/img0.png" width="365px" height="300px">
-                </div>
-    
-                <div class="box">
-                    <img class="img" src="img/img1.png" width="580px" height="420px" style="z-index: 1;">
-                </div>
-    
-                <div class="box">
-                    <img class="img" src="img/img2.png" width="365px" height="300px">
-                </div>
-                <p class="next" style="right: -15px;">❯</p>
+        <section id="projetos">
+            <div class="icone">
+                <img src="img/project.png" alt="icone-projetos" width="65px" height="65px">
+                <p>Meus Projetos</p>
             </div>
-        </section>
+    
+            <div class="box">
+                <div class="box-proj">
+                    <img src="img/droid.png" alt="img-android" width="280px" height="300px">
+                    <p>AndroidUserTools, um site responsivo para um software destinado ao windows, Clique e confira!</p>
+                </div>
 
-        <section id="versao">
-            <h2>
-                Escolha uma versão e baixe agora!<br>
-                para mais versões visite o site do projeto<br>
-                no github através de: version/androidusertools
-            </h2>
-            <div class="box-versao">
-                <h3>Versões</h3>
-                <p>Baixe a versão mais atual v-1.4.9 ou consulte as versões anteriores do AndroidUserTools!</p>
+                <div class="box-proj">
+                    <img src="img/pomo.png" alt="img-pomodoro" width="280px" height="300px">
+                    <p>Um Aplicativo pomodoro, para organizar as suas tarefas e ser mais produtivo sem gastar muito tempo.</p> 
+                </div>
 
-                <div id="selection">
-                    <select name='ver' id="ver">
-                        <option value="d1" selected>versão, 1.4.9</option>
-                        <option value="d2">versão, 1.3.8</option>
-                        <option value="d3">versão,  1.3.7</option>
-                    </select>
-                    <button class="download">download</button>
+                <div class="box-proj">
+                    <img src="img/react.png" alt="img-react" width="280px" height="300px">
+                    <p>Uma calculadora feita com ReactJS, simples mas com visual bem limpo e intuitivo, fácil de se utilizar.</p>
+                </div>
+
+                <div class="box-proj">
+                    <img src="img/patting.png" alt="img-patting" width="280px" height="300px">
+                    <p>Projeto em C/C++ e .NET, auxilia na instalação de programas necessários para o seu dia a dia após a formatação do seu micro.</p>
                 </div>
             </div>
         </section>
 
-        <section id="tutorial">
-            <img src="img/expandir.png" alt="seta-para-baixo">
-            <p>
-                Abra o aplicativo e o execute como administrador<br>
-                Conecte o seu aparelho ao computador usando um cabo USB adequado<br>
-                Certifique-se de que você tenhas as opções de desbloqueio de OEM e Depuração USB ativadas<br>
-                Dentro do aplicativo escolha uma opção e siga os passos presentes no próprio aplicativo para cada opção.
-            </p>
-        </section>   
-    </main>
+        <footer id="contato">
+            <div class="icone">
+                <img src="img/rede.png" alt="rede-social" width="65px" height="65px" style="margin-bottom: 15px;">
+                <p>Contato</p>
+            </div>
+                
+            <div class="box">
+                <div class="box-social">
+                    <div class="text">
+                        <h5>Redes sociais</h5>
+                        <p>Me siga nas redes sociais clicando nos links abaixo:</p>
+                    </div>
 
-    <footer>
-        <div id="social">
-            <a href="https://www.facebook.com/andersonlfb">
-                <img src="img/facebook.png" alt="facebook"/>
-            </a>
+                    <div class="itens">
+                        <a href="https://github.com/AndersonLeandrog" target="_blank">
+                            <img src="img/git.png" width="52px" height="52px"/>
+                        </a>
+                    </div>
 
-            <a href="https://twitter.com/AndersonLetw">
-                <img src="img/twitter.png" alt="twitter"/>
-            </a>
+                    <div class="itens">
+                        <a href="https://www.facebook.com/andersonlfb" target="_blank">
+                            <img src="img/facebook.png" width="52px" height="52px"/>
+                        </a>
+                    </div>
 
-            <a href="https://github.com/AndersonLeandrog">
-                <img src="img/git.png" alt="github"/>
-            </a>
+                    <div class="itens">
+                        <a href="https://twitter.com/AndersonLetw" target="_blank">
+                            <img src="img/twitter.png" width="52px" height="52px"/>
+                        </a>
+                    </div>
 
-            <a href="https://youtube.com/OCodificador">
-                <img src="img/youtube.png" alt="youtube"/>
-            </a>
-        </div>
+                    <div class="itens">
+                        <a href="https://br.linkedin.com/" target="_blank">
+                            <img src="img/linkedin.png"  width="52px" height="52px"/>
+                        </a>
+                    </div>
 
-        <p class="contato">
-            Entre em contato com o desenvolvedor da aplicação através das nossas redes sociais ou pelo Whatsapp ou Telegram: (11)95234-4455.
-        </p>
+                    <div class="itens">
+                        <a href="#" target="_blank">
+                            <img src="img/codesandbox.png" width="52px" height="52px"/>
+                        </a>
+                    </div>
 
-        <p class="copyright">
-            @Copyright todo o conteúdo deste site está de acordo com as normas de direitos autoriais, nossa aplicação utiliza recursos de terceiro, 
-            como o uso do ADB e Fastboot.
-        </p>
-    </footer>
-</body>
+                    <div class="itens">
+                        <a href="https://replit.com/@AndersonLeandr5" target="_blank">
+                            <img src="img/replit.png" width="52px" height="52px"/>
+                        </a>
+                    </div>
+
+                    <div class="itens">
+                        <a href="https://www.99freelas.com.br/user/AndersonLeandrog" target="_blank">
+                            <img src="img/99freela.png" width="52px" height="52px"/>
+                        </a>
+                    </div>
+        
+                    <div class="itens">
+                        <a href="#" target="_blank">
+                            <img src="img/site.png"  width="52px" height="52px"/>
+                        </a>
+                    </div>
+                </div>
+
+                <span>
+                    <h5>Contato</h5>
+                    Deseja sugerir ou sanar alguma dúvida? Entre em contato através dos meus contatos disponibilizados logo abaixo.<br><br>
+                    Entre em contato comigo pelo meu e-mail ou pelo whatsapp através dos seguintes números de telefone:<br><br>
+                    E-mail: andersoncsql@hotmail.com<br>
+                    Celular: (11) 95234-4455 | (11) 96893-1301
+                </span>
+
+                <a href="https://br.freepik.com/vetores/pessoas">
+                    <img src="img/programador.png" alt="imagem-programador" title="criado por freepik" target="_blank" width="230px">
+                </a>
+            </div>
+        </footer>
+    </body>
 </html>
