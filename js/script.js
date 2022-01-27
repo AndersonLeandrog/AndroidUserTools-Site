@@ -1,6 +1,5 @@
 window.addEventListener('load', () => {
 
-    //global
     let click = 0
 
     //Menu
@@ -114,22 +113,22 @@ window.addEventListener('load', () => {
         switch(valor) {
             case 'd1':
                 alert('Você será redirecionado para a página de download...')
-                location.href="github.com/AndersonLeandrog/Android-UTools/releases/tag/v1.4.9"
+                location.href="https://github.com/AndersonLeandrog/Android-UTools/releases/tag/v1.4.9"
                 break;
                 
             case 'd2':
                 alert('Fazendo o download da versão 1.3.8, aguarde...')
-                location.href="github.com/AndersonLeandrog/Android-UTools/releases/tag/v1.3.8"
+                location.href="https://github.com/AndersonLeandrog/Android-UTools/releases/tag/v1.3.8"
                 break;
 
             case 'd3':
                 alert('Fazendo o download da versão 1.3.7, aguarde...')
-                location.href="github.com/AndersonLeandrog/Android-UTools/releases/tag/v1.3.7"
+                location.href="https://github.com/AndersonLeandrog/Android-UTools/releases/tag/v1.3.7"
                 break;
 
             default:
                 alert('Fazendo o download da versão 1.5.0, aguarde...')
-                location.href="github.com/AndersonLeandrog/Android-UTools/releases/tag/v1.5.0"
+                location.href="https://github.com/AndersonLeandrog/Android-UTools/releases/tag/v1.5.0"
                 break;
         }
     })

@@ -33,7 +33,7 @@ window.addEventListener('load', () => {
             width: '620px',
             height: '460px',
             borderRadius: '10px',
-            marginTop: '15%',
+            marginTop: '8%',
             background: '#fff',
 
             fontSize: '16px',
