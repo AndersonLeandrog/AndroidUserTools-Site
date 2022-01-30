@@ -11,6 +11,17 @@
     }
 } 
 
+@media(min-width: 650px) {
+    #video {
+        height: 280px;
+        justify-content: space-evenly;
+    }
+
+        #video iframe {
+            width: 45%;
+        }
+} 
+
 
 @media(min-width: 1024px) {
     header {
@@ -67,6 +78,14 @@
         align-items: center;
     }
 
+    #video {
+        height: 340px;
+    }
+
+        #video iframe {
+            height: 320px;
+        }
+
     #slide {
         display: flex;
     }
@@ -92,7 +111,6 @@
             width: 360px;
         }
 
-    /*donate*/
     #donate {
         height: 1200px;
         justify-content: start;
