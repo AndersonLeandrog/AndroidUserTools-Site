@@ -28,16 +28,16 @@ window.addEventListener('load', () => {
                 scrollTo(0,268)
                 break;
 
+            case 'tutorial':
+                scrollTo(0, 680)
+                break;
+
             case 'screenshot':
-                scrollTo(0,800)
+                scrollTo(0,1200)
                 break;
 
             case 'versao':
-                scrollTo(0,1320)
-                break;
-
-            case 'comoUsar':
-                scrollTo(0,2000)
+                scrollTo(0,1620)
                 break;
 
             case 'donate':

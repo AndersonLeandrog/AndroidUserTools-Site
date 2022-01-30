@@ -131,7 +131,7 @@ body {
 
             .box-info {
                 cursor: pointer;
-                width: 360px;
+                width: 300px;
                 height: 280px;
                 margin: 15px 0 15px 0;
                 border-radius: 10px;
@@ -208,12 +208,24 @@ body {
                     background: #3CB371;
                 }
 
+        #versao {
+            width: 100%;
+            height: 300px;
+            background: #000;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
             .box-versao {
-                width: 380px;
+                width: 300px;
                 height: 260px;
                 margin: 15px 0 15px 0;
                 border-radius: 10px;
-                background: #3CB371;
+                border: 1px solid silver;
+                
+                    
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
@@ -226,60 +238,40 @@ body {
                     color: #fff;
                 }
 
-            #tutorial {
-                cursor: pointer;
-                width: 100%;
-                height: 32px;
-                background: #FFA500;
-                overflow: scroll;
-                overflow: hidden;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            #tutorial:hover {
-                animation-name: slideDown;
-                animation-duration: 0.5s;
-                animation-fill-mode: both;
-            }
-
-            @keyframes slideDown {
-                from {height: 32px;}
-                to {height: 260px;}
-            }
-
-                #tutorial img {
-                    width: 32px;
-                    height: 32px;
-                    filter: invert(1);
+                .box-versao ul  {
+                    width: 90%;
+                    height: 75px;
+                    display: flex;
+                    justify-content: center;
                 }
 
-                #tutorial p {
-                    font-size: 1.4em;
-                    text-align: center;
-                    padding-top: 60px;
-                }
-        
-            #selection {
-                width: 95%;
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-            }
-
-                select, button {
-                    cursor: pointer;
-                    width: 120px;
-                    height: 35px;
-                    outline: none;
-                    border: 1px solid #000;
+                .box-versao li {
+                    font-size: 0.95em;
+                    padding: 3px;
+                    background: transparent;
                 }
 
-                button:hover {
-                    color: #fff;
-                    background: #3CB371;
+                #selection {
+                    width: 95%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
                 }
+
+                    select, button {
+                        cursor: pointer;
+                        width: 120px;
+                        height: 35px;
+                        outline: none;
+                        border: 1px solid #fff;
+                        background: transparent;
+
+                        color: #fff;
+                    }
+
+                    button:hover {
+                        background: #3CB371;
+                    }
 
     footer {
         width: 100%;

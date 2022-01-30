@@ -45,7 +45,7 @@ window.addEventListener('load', () => {
             alignItems: 'center',
         })
 
-        $(div).append($('<button class="aceitar">aceitar</button>'))
+        $(div).append($('<button class="aceitar">aceitar</button>').attr('style', 'color: #000; border: 1px solid #000;'))
         $('body').append(div)
 
         $('.aceitar').click(() => $(div).remove())
