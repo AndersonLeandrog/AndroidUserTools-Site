@@ -112,23 +112,31 @@ window.addEventListener('load', () => {
 
         switch(valor) {
             case 'd1':
-                alert('Você será redirecionado para a página de download...')
-                location.href="https://github.com/AndersonLeandrog/Android-UTools/releases/tag/v1.4.9"
+                location.href="https://github.com/AndersonLeandrog/Android-UTools/releases/download/v1.4.9/AndroidUserTools_v1.4.9.zip"
                 break;
                 
             case 'd2':
-                alert('Fazendo o download da versão 1.3.8, aguarde...')
-                location.href="https://github.com/AndersonLeandrog/Android-UTools/releases/tag/v1.3.8"
+                location.href="https://github.com/AndersonLeandrog/Android-UTools/releases/download/v1.3.8/AndroidUserTools.fix.1.3.8.stable.zip"
                 break;
 
             case 'd3':
-                alert('Fazendo o download da versão 1.3.7, aguarde...')
-                location.href="https://github.com/AndersonLeandrog/Android-UTools/releases/tag/v1.3.7"
+                location.href="https://github.com/AndersonLeandrog/Android-UTools/releases/download/v1.3.7/AndroidUserTools.fix.1.3.7.stable.zip"
+                break;
+
+            case 'd4':
+                location.href="https://github.com/AndersonLeandrog/Android-UTools/releases/download/v1.3.6/AndroidUserTools.fix.1.3.6.zip"
+                break;
+
+            case 'd5':
+                location.href="https://github.com/AndersonLeandrog/Android-UTools/releases/download/v1.3.5/AndroidUserTools.fix.1.3.5.zip"
+                break;
+
+            case 'd6':
+                location.href="https://github.com/AndersonLeandrog/Android-UTools/releases/download/v1.3.4/AndroidUserTools.fix.1.3.4.zip"
                 break;
 
             default:
-                alert('Fazendo o download da versão 1.5.0, aguarde...')
-                location.href="https://github.com/AndersonLeandrog/Android-UTools/releases/tag/v1.5.0"
+                location.href="https://github.com/AndersonLeandrog/Android-UTools/releases/download/v1.5.0-B/AndroidUserTools.v.1.5.0-B.zip"
                 break;
         }
     })
